@@ -41,14 +41,38 @@ ul{
     position: relative;
     height: 106px;
 }
-#logo_box img{
-    width: 90px;    
-}
 #logo_box{
     padding: 8px 0;
     float:left;
+    /* float은 뜨다의 뜻을 가지고 있고 html에서도 상위 태그 위 떠있는
+    형태로 표시 되기 때문에 상위 태그에 포함되지 않는다. 
+    정렬을 위한 속성이지만 상위태그에 미포함 되기 때문에 상위 태그에 높이,여백
+    같은 값을 별도로 지정해줘서 사용해야한다.
+     */
 }
-
+#logo_box img{
+    width: 90px;    
+}
+#menu_box{
+    position: relative;
+}
+#menu_list{
+    /* padding: 40px 0; */
+    /* height: 106px; */
+    position: absolute;
+    right: 0;
+}
 #menu_list .menu{
-    float:right;
+    float:left;
+    position: relative;
+    top: 30px;
+    font-size: 25px;
+    padding: 0 15px;
+}
+#menu_list .menu:hover{
+    cursor: pointer;
+    color: brown;
+    font-weight: 800;
+    text-shadow: 1px 1px 1px #444;
+    /* 그림자 줄 때 x축 y축 둘다 양수 주면 오른쪽 대각선 아래로 */
 }

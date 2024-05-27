@@ -176,11 +176,11 @@ ul{
 
 .foot_menu li:nth-child(1){ padding-left: 0;}
 .foot_menu li:nth-child(2){
-    border-left: 2px solid rgb(red, green, blue);
-    border-right: 2px solid rgb(red, green, blue);
+    border-left: 2px solid rgb(249, 249, 151);
+    border-right: 2px solid rgb(249, 249, 151);
 }
 .foot_menu li:nth-child(3){ 
-    border-right: 2px solid rgb(red, green, blue);
+    border-right: 2px solid rgb(249, 249, 151);
 }
 
 .foot_text{

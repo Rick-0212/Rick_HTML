@@ -23,7 +23,7 @@ ul{
     color:#eee;
     width:100%
 }
-.top_text_box{
+.top_box{
     text-align: right;
     padding-right: 50px;
 }
@@ -32,16 +32,23 @@ ul{
     padding:8px 15px; 
 }
 #top .top_text:nth-child(2){
-    border-left: 1px soild #ccc;
-    border-right: 1px soild #ccc;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
 }
 
 #nav{
     width: 100%;
     position: relative;
+    height: 106px;
+}
+#logo_box img{
+    width: 90px;    
+}
+#logo_box{
+    padding: 8px 0;
+    float:left;
 }
 
-#logo_box img{
-    width: 90px;
-    
+#menu_list .menu{
+    float:right;
 }

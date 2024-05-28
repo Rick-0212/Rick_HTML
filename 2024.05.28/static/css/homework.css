@@ -30,7 +30,7 @@ ul, ol{
 }
 #slide .slide_bt span{
     display:inline-block;
-    width:100px;
+    width:100px; 
     height:30px;
     background:#68c7dd;
     border-radius: 10px;

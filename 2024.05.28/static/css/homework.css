@@ -1,0 +1,19 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul, ol{
+    list-style-type: none;
+}
+
+#wrap{
+    width: 1000px;
+    margin: 0 auto;
+    /* margin: 0 auto; 를 주어야 페이지에 가운데가 올 수 있다. */
+}
+#top{
+    width: 1000px;
+    padding: 20px 0;
+}

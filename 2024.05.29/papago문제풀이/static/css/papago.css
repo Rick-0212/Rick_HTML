@@ -61,4 +61,8 @@
     margin: 0 auto;
     padding: 50px 0;
     position: relative;
+    border-bottom: 1px solid #ccc;
+}
+#main.box{
+    width: 100%;
 }

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+   <script type="text/javascript">
+    
+    // 변수 - 데이터 저장된, 저장될 수 있는 메모리(ram)공간
+    //    변수를 이용하면 메모리 저장을 더 적게 할 수 있다. 변수 이름에 첫번째는 반드시 문자로 시작하게끔! 숫자로 하면 오류. 단, 'document'는 이미 자바에서 쓰고 있기에 쓰면 안됨
+    // 데이터에 저장하고자하는 이름으로 저장하면 좋다.
+    // == 또는 ===이 같다라는 의미
+    //자바스크립트는 크게 2가지. 문자냐 숫자냐로 구분
+    num=10;
+
+    apple=1203;
+    melon=234;
+
+    document.write(num);
+    document.write("나는 자바스크립트입니다.");
+
+    num=1000;
+    document.write("<br>") // 변수와 숫자를 제외한 것, 즉 문자에는 따옴표를 해줘야함.
+    document.write(num * 5);
+
+
+    //사각형의 너비는 45이고, 높이는 15일경우 넓이는 얼마인가?
+    width=45;
+    height=15;
+
+    document.write("<br>");
+    document.write("사각형의 너비는");
+    document.write(width);
+    document.write(" 높이는 " + height); // -> "높이는 15" +는 문자열 확장 // 변수를 사용하면 좋은 점은 재사용이다. 처음 정한 값에만 바꿔주면 모든 값에 바꿔진다.
+    document.write("<br>");
+    document.write("넓이는" + width * height);
+
+    //국어:89 , 영어:94, 수학:78
+    //총점 : 261점
+    document.write("<hr>");
+    kor=89;
+    eng=94;
+    mat=78;
+
+    document.write('국어:'+kor+ '영어:'+eng+'수학:'+78+'<br>');
+    document.write('총점:261점')
+    //total =kor+eng+mat;
+    //document.write("총점:"+total+"점");
+
+
+    document.write("<hr>");
+
+    //커피 총 주문 금액과 수박주스 총 주문 금액 출력
+    //음료 총 주문 금액 출력
+
+    커피주문 = 3;
+    수박주스주문 = 4;
+    아메리카노 = 1500;
+    수박주스 = 2000;
+
+    document.write('커피금액은'+커피주문*아메리카노+"<br>");
+    document.write('수박주스금액은'+수박주스주문*수박주스+"<br>"); 
+    document.write('총금액은'+(커피주문*아메리카노+수박주스주문*수박주스+'원입니다'));
+    document.write("<hr>");
+    
+    
+    //변수의 이해
+    redCup =10;
+    blueCup =20;
+    whiteCup =0;
+
+    whiteCup = redCup;
+    redCup=blueCup;
+    blueCup=whiteCup;
+    
+    //데이터 입력 방법1.  데이터를 만들어야한다면 반드시 변수를 정해야함.
+    //prompt를 통해서 데이터를 입력할 수 있다. 
+    //prompt로 입력한 데이터는 문자열이다.
+    //숫자로 계산하려면 숫자로 강제 변환을 해야한다.
+    //숫자로 변환이 가능한 문자열만 할 수 있다.
+    //"50" 큰따옴표 안에 있으면 문자이지만, 
+    //parseInt(문자열) -> 정수로 변환  ex)"50aaa" -> 50
+    //parseFloat(문자열) -> 실수로 변환
+    //Number(문자열) -> 숫자로 변환, 문자열에 단하나의 문자도 있으면 안된다. (정수,실수 변환가능)
+
+   kor = parseInt (prompt("국어점수"));    
+   mat = parseInt (prompt("수학점수"));
+   eng = Number (prompt("영어점수"));
+   total= kor+ mat + eng;
+
+   document.write("국어:" +kor + "수학:"+ mat+ "영어:"+eng);
+   document.write("<br> 총점: "+total);
+
+
+   </script> 
+    
+</body>
+</html>

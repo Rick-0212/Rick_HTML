@@ -86,14 +86,49 @@
     //parseFloat(문자열) -> 실수로 변환
     //Number(문자열) -> 숫자로 변환, 문자열에 단하나의 문자도 있으면 안된다. (정수,실수 변환가능)
 
-   kor = parseInt (prompt("국어점수"));    
-   mat = parseInt (prompt("수학점수"));
-   eng = Number (prompt("영어점수"));
-   total= kor+ mat + eng;
+//    kor = parseInt (prompt("국어점수"));    
+//    mat = parseInt (prompt("수학점수"));
+//    eng = Number (prompt("영어점수"));
+//    total= kor+ mat + eng;
 
-   document.write("국어:" +kor + "수학:"+ mat+ "영어:"+eng);
-   document.write("<br> 총점: "+total);
+//    document.write("국어:" +kor + "수학:"+ mat+ "영어:"+eng);
+//    document.write("<br> 총점: "+total);
 
+    // 실습 3.
+    // 이름과 거주 도시명 , 생년월일을 입력하여 출력하세요
+
+    name = (prompt("이름")); //팝업창
+    city = (prompt("거주지"));
+    birth = (prompt("생년월일"));
+
+    document.write("이름:"+ name+"<br>");
+    document.write("거주지:"+ city +"<br>")
+    document.write("생년월일:"+birth+"<br>")
+
+    /* 
+        카멜케이스 - 첫글자는 소문자시작, 두번째 단어부터 대문자표기
+                blueCup, myName, iAmspierMan
+                 일반 변수명, 함수명, 메서드 명 등등
+
+        스네이크케이스 - 모든 단어를 소문자로 작성하고 단어 사이에 _를 넣는다.
+                blue_Cup, my_name, i_am_spider_man
+                 데이터베이스 테이블명, 테이블의 컬럼명
+                
+        파스칼케이스 - 모든 단어를 띄어쓰기 없이 대문자로 시작
+                blueCup, MyName, IAmSpiderMan
+                 클래스명, 인터페이스명
+
+                
+        케밥케이스 - 모든 단어를 소문자로 작성하고 단어사이에 -를 넣는다.
+                blue-cup, my-name, i-am-spider-man
+                 HTML태그의 ID, CLASS
+                
+        헝가리언 표기법 - 이름에 목적이나 타입을 접두사로 기재
+                blueInt, blue_int, blue-int, BlueInt
+                myNameString, my_name_string     
+                 변수 명   
+        상수 명 -> 모두 대문자          
+    */
 
    </script> 
     

@@ -1,0 +1,152 @@
+<!-- javascript_연산자 -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <script>
+/*
+        연산자 종류
+        산술 연산자 -> -,+,*,/,%
+        대립 연산자 ->  = (오른쪽 값을 왼쪽에 저장) 대립 연산자는 우선순위가 굉장히 낮다.
+        증감 연산자 ->
+        비교 연산자 -> > , < , >= , <= , == , === , !=
+        논리 연산자 -> && (and) , || (or) , !(not)
+        조건 연산자(삼항 연산자) -> (비교식) ? 참 : 거짓;
+        접근 연산자 -> .
+
+        *연산자를 다룰 때 반드시 주의해야 할 것*
+         -연산자간의 우선순위를 생각하고 식을 만들어야한다.
+         -전체 연산자 중에서 가장 높은 순위는 작은 괄호() -> 대괄호[] -> -> .
+  */
+        // console.log(출력내용); 테스트용, 개발과정에서 확인용
+        //산술 연산자 -,+,*,/,% 
+    //    num1= 17;
+    //    num2= 4;
+    //    console.log(num1 + num2);
+    //    console.log(num1 - num2);
+    //    console.log(num1 * num2);
+    //    console.log(num1 / num2);
+    //    console.log(num1 % num2); //    %와 /는 나머지값 구하는것임. 몫과 나머지값이 나오기에 나누는 연산자가 2개인거임.
+    //    //2의 10승까지는 외워서 바로 나올 수 있어야함. 개발자라 한다면
+
+    //    //증감 연산자  ++, -- (1증가, 1감소)
+    //    add1 = 10;
+    //    add1++; //add1 = add1+1;
+    //    console.log(add1);
+
+    //    down1 = 10;
+    //    down1--;
+    //    console.log(down1);
+
+    //    add2 = 10;
+    //    console.log(add2++); /* 대입연산자에게 출력되는 것인데 대입연산자보다 우선순위가 낮기 때문에 10으로 출력이 되는 것임. 
+    //                            증감연산자가 변수 뒤에 붙으면 다른 연산자보다 나중에 동작함. 증감연산자가 앞에 붙으면 적용됨 */
+    //    add3 = 10;
+    //    result = add3++;
+    //    console.log(result);
+
+    //    add4 = 10;
+    //    console.log(++add4);
+
+       // 비교 연산자를 사용할 땐 ture, false 나온다.
+       // 대소비교연산자 > , < >= , <=
+       // 등가비교연산자 ==, ===, !=
+
+    //    console.log(10 > 5);
+    //    console.log(10 < 5);
+    //    num1 = 15;
+    //    num2 = 23;
+
+       // 왜 비교연산자를 사용해야하냐? -> ex)바이킹을 타는데 키가 150이상만 탈 수 있다. 
+
+    //    console.log(num1>num2);
+    //    console.log(num1>=num2);
+    //    console.log(num1<=num2);
+    //    console.log(num1<num2);
+
+    //    tall = Number(prompt("당신의 키는 :"));
+    //    console.log("ture 탑승가능, false 탑승불가");
+    //    console.log( tall>=150);
+
+
+       // 신입개발자의 초봉 평균은 31000이다.
+       // 당신의 현재 연봉이 평균이상인가?
+       // 연봉 입력하여 출력
+       // document.write로 출력
+    //    // "ture면 평균 이상이고, false면 평균이하이다."
+
+    //    Salary= Number(prompt("당신의 현재 연봉은 얼마입니까?"))
+
+    //    console.log(Salary>=3100);
+    //    console.log((Salary>=3100)+ "true면 평균이상");
+    //    console.log((Salary>3100)+"false면 평균이하");
+       
+
+    //    document.write("당신의 연봉은" + (Salary>=3100));
+    
+
+
+    //    연봉 = parseInt( prompt("내 연봉은 얼마인가?"));
+    //    document.write( 3100<=연봉); // 연봉>= 3100
+    //    document.write("ture면 평균이상, false면 평균미만");
+       
+    // 아메리카노 금액: 2000원
+    // 인원 5명
+    // 내 계좌 잔액이 얼마인지 입력 받기 (prompt로 입력받으세요)
+    // 5명의 아메리카노를 구매할 수 있는가? 없는가?
+    // document.write로 출력하세요
+
+    // count = Number(prompt("계좌 잔액이 얼마 남아있는지 입력하세요"));
+
+       
+    // document.write("당신의 계좌로 5잔의 아메리카노를 구매하실 수" +"<br>");
+    // document.write(10000<count);    
+
+    // 아메리카노 = 2000;
+    // 인원 = 5;
+    // 내계좌 = Number(prompt("내 통장 잔액이 얼마인가?"));
+
+    // document.write("구매가능? " +(아메리카노 * 인원 <= 내 계좌));
+    // // document.write("구매가능? " +(내 꼐좌 >= 아메리카노 * 인원));
+
+    //등가 ==(동등연산자), ===(일치연산자), !=
+    console.log( 10==10);
+    console.log( 10 != 10);
+
+    console.log( "10"== 10); //(true)
+    console.log( "10"=== 10); //(false)
+
+    console.log( "10"=== 10);
+    // 생년월일을 입력하여 회원가입할 때 입력한 생년월일과 비교를 한다면
+    // html에서 입력하는 모든 값은 문자열이다.
+    //"000212" === 000212
+    
+    console.log("이순신" === "이순신"); //완전 일치해야 ture 공백들어가도 false
+
+    name1 ="김유신";
+    name2 ="김유신  "; //여백줌
+    console.log(name1.trim() === name2.trim()); 
+    // 변수.trim() -> 문자열 양쪽 끝의 공백만 제거, 중간여백은 제거 못함. 혹시라도 여백 들어가있으면 사용가능
+    
+    word1 = "abcd";
+    word2 = "ABcd";
+    console.log("영어 대소문자가 다르다면" + (word1 === word2)); //영어도 대소문자 ture/false 따지기에 영어 대소문자도 일치해야함.
+
+    console.log( word1.toLowerCase() === word2.toLowerCase());
+    // toLowerCase() -> 모든 영어문자를 소문자로 변환
+    // toUpperCase() -> 모든 영어문자를 대문자로 변환
+
+
+
+    </script>
+
+</head>
+<body>
+    
+
+
+</body>
+</html>

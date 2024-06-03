@@ -143,8 +143,8 @@
 
     // // 조건연산자 - 조건식(비교연산자로 만들어진 식, 결과가 참 또는 거짓)을 비교하여 결과가 참이냐 거짓이냐에 따라 다음 실행할 코드를 설정할 수 있다.
     
-    // age = 25;
-    // (age >= 30) ? document.write("30살 넘었다.") : document.write("떡국 더 먹고와라");
+    age = 25;
+    (age >= 30) ? document.write("30살 넘었다.") : document.write("떡국 더 먹고와라");
 
     // score = 58;
     // 결과 = (score >= 60) ? "합격" : "불합격"; // ex) a=290 변수에 저장하는 형태는 쓰지말아야한다. 이 녀석은 빨간색이 안나온다. 어디에서 꼬였는지 모른다.
@@ -152,63 +152,63 @@
     // document.write("<br><br>" + 결과);
 
 
-    //바이킹을 탑승하려면 키가 135 이상이여야한다. 
-    // tall = Number(prompt("당신의 키는?"));
-    // result = (tall >= 135) ? "탑승가능" : "탑승불가";
-    // document.write("<br><br> 탑승여부 : " + result);    
+   //  바이킹을 탑승하려면 키가 135 이상이여야한다. 
+    tall = Number(prompt("당신의 키는?"));
+    result = (tall >= 135) ? "탑승가능" : "탑승불가";
+    document.write("<br><br> 탑승여부 : " + result);    
     //이렇게 연습하고 사용할 수 있도록
     // 기존 변수를 가지고 새로운 변수에 저장해야한다는 생각 가질 수 있도록. (result)
 
     // 하루에 총걸음수가 6000보를 넘으면 포인트 점수 10점을 받을 수 있다.
     // 이 사람의 오늘 걸음수를 입력받아 현재 포인트가 몇점인지 출력하세요.
 
-    // userPoint = 435; // 현재 포인트 점수 435점
-    // step = Number(prompt("오늘 총 몇 걸음?"));
+    userPoint = 435; // 현재 포인트 점수 435점
+    step = Number(prompt("오늘 총 몇 걸음?"));
 
-    // addPoint = (step > 6000) ? 10 : 0;
-    // userPoint = userPoint + addPoint;
-    // document.write( "현재 포인트 : " + userPoint);
+    addPoint = (step > 6000) ? 10 : 0;
+    userPoint = userPoint + addPoint;
+    document.write( "현재 포인트 : " + userPoint);
 
     // 두 정수를 입력 받아 두 정수 중 큰 수 출력 
-    // num1 = Number(prompt("첫번째 정수"));
-    // num2 = Number(prompt("두번째 정수"));
+    num1 = Number(prompt("첫번째 정수"));
+    num2 = Number(prompt("두번째 정수"));
 
-    // result = (num1 > num2) ? num1 : num2;
-    // document.write("큰 수 : " + result);
+    result = (num1 > num2) ? num1 : num2;
+    document.write("큰 수 : " + result);
 
     // 두 정수를 입력받아, 두 정수의 합이 21이라면, 블랙잭, 아니라면 합을 출력 
     
-    // num1 = Number(prompt("첫번째 정수"));
-    // num2 = Number(prompt("두번째 정수"));
-    // total = (num1 + num2);
-    // result = (total==21) ? "블랙잭" : total;
+    num1 = Number(prompt("첫번째 정수"));
+    num2 = Number(prompt("두번째 정수"));
+    total = (num1 + num2);
+    result = (total==21) ? "블랙잭" : total;
 
-    // document.write("두 정수: " + result);
+    document.write("두 정수: " + result);
 
-    // num1 = Math.floor (Math.random()*45)+1;
-    // console.log(num1);
+    num1 = Math.floor (Math.random()*45)+1;
+    console.log(num1);
 
-    // num1 = Math.floor (Math.random()*23)+11;
-    // console.log(num1);
+    num1 = Math.floor (Math.random()*23)+11;
+    console.log(num1);
 
-    // card1 = Math.floor( Math.random()* 11) +1 ;
-    // card2 = Math.floor( Math.random()* 11) +1 ;
-    // card3 = 0;
+    card1 = Math.floor( Math.random()* 11) +1 ;
+    card2 = Math.floor( Math.random()* 11) +1 ;
+    card3 = 0;
 
-    // card3 = ((card1+card2+card3) <=14) ? Math.floor(Math.random() * 11) + 1 : 0;
+    card3 = ((card1+card2+card3) <=14) ? Math.floor(Math.random() * 11) + 1 : 0;
     
-    // document.write("나의 카드 : " + card1 + "," + card2 + "," + card3 + "<br>");
-    // document.write("합 : " + (card1 + card2 + card3));
+    document.write("나의 카드 : " + card1 + "," + card2 + "," + card3 + "<br>");
+    document.write("합 : " + (card1 + card2 + card3));
 
     // 랜덤 함수를 사용하여 (1-50) 중의 숫자 두개를 받으세요.
     // 숫자 두개의 곱하기 값이 1200 이상이면 '큰 수' 아니라면 '작은 수'라고 출력하세요.
     
-   //  num1 = Math.floor( Math.random()* 50) +1 ;
-   //  num2 = Math.floor( Math.random()* 50) +1 ;
+    num1 = Math.floor( Math.random()* 50) +1 ;
+    num2 = Math.floor( Math.random()* 50) +1 ;
 
-   //  mulNum = (num1 * num2);
-   //  출력내용 = ( mulNum >= 1200) ? `큰 수( ${num1},${num2} )`: `작은 수( ${num1},${num2} )`; 
-   //  document.write (출력내용);
+    mulNum = (num1 * num2);
+    출력내용 = ( mulNum >= 1200) ? `큰 수( ${num1},${num2} )`: `작은 수( ${num1},${num2} )`; 
+    document.write (출력내용);
     
 
 

@@ -1,4 +1,4 @@
-<!-- javascript_연산자 -->
+<!-- javascript_연산자
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -208,12 +208,12 @@
 
     mulNum = (num1 * num2);
     출력내용 = ( mulNum >= 1200) ? `큰 수( ${num1},${num2} )`: `작은 수( ${num1},${num2} )`; 
-    document.write (출력내용);
+    document.write (출력내용); -->
     
 
 
 
-
+<!-- 
     // 과제 1.
     // 소주 1잔에 수명이 2분 단축 된다.  
     // 어떤 사람이 20년동안 소주를 마셨다.
@@ -225,14 +225,62 @@
 
     // 과제2.
     // 두개의 주사위를 던져서 같은 값이 나온다면 당첨, 아니라면 꽝 출력
-    // 주사위는 6면 주사위임
+    // 주사위는 6면 주사위임 -->
+
+
+   <!-- 문제
+   주차비를 정산하는 프로그램 만들기
+   기본 주차비는 1000원이고, 기본 주차시간은 30분이다. 
+   12분 주차해도 1000원이다. 
+   10분당 100원
+   10분 이상 주차 할 경우 100원씩 부과된다.
+
+   단 2시간 이상 주차시 기본요금은 1700원이다
+   2시간 5분 주차시 1700원이다. 2시간에 대한 요금은 1700원으로 계산한다. 
+   2시간 23분 주차시 1900원이다.
+
+   4시간 이상에 대한 요금은 2700원이다. 
+   4시간 35분 주차시 기본요금 2700+30분 초과 금액 300 계산해서 3000원이다. 
+   주차를 총 몇 분 하였는가 입력하면 주차비가 출력되어야 한다.  -->
+    
+   
+   <script>
+//cpt= customerParkingTime : 고객 주차시간
+
+      cost = 1000;
+      parkingTime = 3;
+      add = 100;
+
+      cpt = Number(prompt("총 주차 시간은 몇분")); // 35
+
+      cost = (cpt >= 240)? 2700 : (cpt >= 120) ? 1700 : cost;
+      // cost = (cpt >= 240) ? 2700 : cost;
+
+      parkingTime = (cpt >= 240) ? 24:  (cpt >= 120) ? 12 : parkingTime;
+
+
+
+ 
+      time = Math.floor(cpt/10);
+      price = (time <= parkingTime) ? cost : cost + ( time - parkingTime) * add;
+
+
+      document.write(`주차시간 : ${cpt}분
+       <br> 주차비 : ${price.toLocaleString()}원`);
 
 
 
 
 
 
-    </script>
+
+
+
+
+
+   </script>     
+               
+      
 
 </head>
 <body>

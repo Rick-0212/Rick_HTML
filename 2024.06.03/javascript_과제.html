@@ -19,20 +19,13 @@
 
 dailyDrinks = Number(prompt("하루에 몇 잔씩 마시나요?"));
 
-// 총 마신 시간 계산 (분 단위)
 totalMinutesReduced = dailyDrinks * 2 * 365 * 20 ; 
-
-// 총 시간 단축 계산 (시간 단위)
 totalHoursReduced = Math.floor(totalMinutesReduced / 60);
-
-// 총 일 단축 계산 (일 단위)
 totalDaysReduced = Math.floor(totalHoursReduced / 24);
 
-// 결과 출력
 document.write("총 몇 분 단축되었는가? " + totalMinutesReduced + " 분" + "<br>");
 document.write("총 몇 시간 단축되었는가? " + totalHoursReduced + " 시간" + "<br>");
 document.write("총 며칠 단축되었는가? " + totalDaysReduced + " 일" + "<br>");
-
 
     // 과제2.
     // 두개의 주사위를 던져서 같은 값이 나온다면 당첨, 아니라면 꽝 출력
@@ -41,9 +34,7 @@ document.write("총 며칠 단축되었는가? " + totalDaysReduced + " 일" + "
     die1 = Math.floor( Math.random()* 6) +1 ;
     die2 = Math.floor( Math.random()* 6) +1 ;
 
-    dies = (die1 == die2);
-    dies = ( die1 ==die2) ? "당첨" : "꽝" ;
-    dies = ( die1 != die2 ) ? "당첨" : "꽝" ;
+    dies = ( die1 == die2) ? "당첨" : "꽝" ;
     document.write (dies);
 
 

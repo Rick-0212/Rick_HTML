@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Random Number Display</title>
+    <style>
+        .number-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 200px;
+        }
+        .number-container div {
+            width: 25%;
+            text-align: center;
+            padding: 10px;
+            box-sizing: border-box;
+        }
+        .hidden {
+            display: none;
+        }
+    </style>
+</head>
+<body>
+    <button id="generateButton">숫자 생성</button>
+    <div id="numberContainer" class="number-container hidden"></div>
+
+    <script>
+        document.getElementById('generateButton').addEventListener('click', displayRandomNumbers);
+
+        function generateRandomNumbers() {
+            const numbers = [];
+            while (numbers.length < 20) {
+                const randomNumber = Math.floor(Math.random() * 50) + 1;
+                if (!numbers.includes(randomNumber)) {
+                    numbers.push(randomNumber);
+                }
+            }
+            return numbers;
+        }
+
+        function displayRandomNumbers() {
+            const numberContainer = document.getElementById('numberContainer');
+            numberContainer.innerHTML = '';
+            const numbers = generateRandomNumbers();
+
+            numbers.forEach((number) => {
+                const numberDiv = document.createElement('div');
+                numberDiv.textContent = number;
+                numberContainer.appendChild(numberDiv);
+            });
+
+            numberContainer.classList.remove('hidden');
+        }
+    </script>
+</body>
+</html>

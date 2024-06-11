@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+<script>
+
+function getData( op ){
+       var n1= Number(document.getElementById("num1").value);
+       var n2= Number(document.getElementById("num2").value);
+       var 결과 =0; //뭐라도 넣어줘라. 결과라는 변수에 0이라도 일단 넣어라. null이라도 넣던가
+       switch(op){
+           case '+': 결과 = n1+n2;
+            break;
+           case '-': 결과 = n1-n2;
+            break;
+           case '*': 결과 = n1*n2;
+            break;
+           case '/': 결과 = n1/n2;
+            break;           
+       }
+       
+       document.querySelectorAll("#result").innerHTML = 결과;
+    }
+
+    // function plus(){
+    //     getData('+');
+    
+    // //하나만 선택 시 querySelector과 getElementById와 사용은 같음.
+    // // document.querySelectorAll(".box") //다수의 선택 시
+    // }
+
+    // function minus(){
+    //     getData('-');
+       
+    // }
+
+    // function mul(){
+    //     getData('*');
+      
+    // }
+    // function div(){
+    //     getData('/');
+      
+    // }
+
+
+
+
+
+
+</script>
+
+
+
+
+</head>
+<body>
+    <div id="input_box">
+        <input type="text" id="num1"> 
+        <input type="text" id="num2">
+        <!-- input태그는 기본으로 vaule 100이 들어가있다. 적지않아도 input태그가 가지고 있다 
+             input상태로 들어가면 전부 문자열로 들어간다-->
+    </div>    
+    <button onclick="plus()">더하기</button>
+    <button onclick="minus()">빼기</button>
+    <button onclick="mul()">곱하기</button>
+    <button onclick="div()">나누기</button>
+
+    <div id="result"></div>
+
+
+
+
+</body>
+</html>

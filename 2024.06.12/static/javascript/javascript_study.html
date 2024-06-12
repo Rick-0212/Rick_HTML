@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+    <!-- jquery는 반드시 맨 위에 작성 -->
+    <script>
+        // window.onload=function(){
+        //     document.getElementById("box").innerHTML="오늘 수요일";
+
+        //     document.getElementById("open").addEventListener( 'click', function(){
+        //         document.getElementById("box").style.display="block";
+        //     });
+        //     document.getElementById("close").addEventListener('click', function(){
+        //         document.getElementById("box").style.display="none"
+        //     });
+        // }
+
+
+        //jquery로 만든다면!!!
+        $(function(){
+            // $("#box").html("오늘은 수요일");
+            $("#open").on('click' , function(){
+                // $("#box").show(2000);
+                $("#box").show(2000);
+            });
+            $("#close").click(function(){
+                $("#box").hide(2000);
+            });
+        });
+            //$("#box") .toggle(); .show()-보이기  .hide()-감추기
+            //$("#box") .fadeToggle(); .fadeIn()-서서히 보이기 .fadeOut()-서서히감추기
+            //$("#box") .slideToggle(); .slideUp()   .slideDown() 
+
+
+
+    </script>
+
+</head>
+<body>
+    <button id="open">열기</button>
+    <button id="close">닫기</button>
+    <div id="box">
+    <p>오늘 점심메뉴는?</p>
+    <p>간장게장, 청국장?></p>
+    <p>돈가스?</p>
+    <p>짜장면???</p>
+    <p>뭐 먹지...</p>
+    </div>  
+
+
+
+
+
+</body>
+</html>
